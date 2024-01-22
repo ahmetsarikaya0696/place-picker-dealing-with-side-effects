@@ -62,7 +62,7 @@ function App() {
     }
   }
 
-  const handleRemovePlace = useCallback(() => {
+  const handleRemovePlace = useCallback(function handleRemovePlace() {
     setPickedPlaces((prevPickedPlaces) =>
       prevPickedPlaces.filter((place) => place.id !== selectedPlace.current)
     );
